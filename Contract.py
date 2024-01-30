@@ -1,38 +1,40 @@
 class Contract:
     def __init__(self, initial_balance=10000):
         self.balance = initial_balance
-        self.grid_size = 1000
+        self.unit_price = 100  # 期货合约的单价
+        self.leverage = 10  # 杠杆倍数
         
-    def buy_contract(self, amount, price):
-        cost = amount * price
+    def buy_contract(self, quantity):
+        cost = quantity * self.unit_price * self.leverage
         if cost > self.balance:
             print("Insufficient balance to buy the contract.")
         else:
             self.balance -= cost
-            print(f"Bought {amount} contracts for ${cost}")
+            print(f"Bought {quantity} contracts for ${cost}")
     
-    def sell_contract(self, amount, price):
-        sale = amount * price
+    def sell_contract(self, quantity):
+        sale = quantity * self.unit_price * self.leverage
         self.balance += sale
-        print(f"Sold {amount} contracts for ${sale}")
-    
-    def apply_grid_trading(self, current_price):
-        lower_price = int(current_price / self.grid_size) * self.grid_size
-        upper_price = lower_price + self.grid_size
-        
-        self.buy_contract(1, lower_price)
-        self.sell_contract(1, upper_price)
+        print(f"Sold {quantity} contracts for ${sale}")
     
     def get_balance(self):
         print(f"Current balance: ${self.balance}")
 
 
-# Test the grid trading process
-contract = Contract()
+# 使用预测值进行期货交易
+def maximize_profit(prediction, current_value):
+    contract = Contract()
 
-contract.buy_contract(5, 4500)  # Buy 5 contracts at $4500
-contract.sell_contract(3, 4600)  # Sell 3 contracts at $4600
+    if prediction > current_value:
+        # 如果预测价格为上涨，则买入期货合约
+        contract.buy_contract(10)
+    else:
+        # 如果预测价格为下跌，则卖出期货合约
+        contract.sell_contract(10)
 
-contract.apply_grid_trading(4700)  # Apply grid trading at $4700
+    contract.get_balance()  # 查询当前余额
 
-contract.get_balance()  # Check the current balance
+
+# 测试
+# 假设预测值为110，当前价格为100
+maximize_profit(110, 100)
