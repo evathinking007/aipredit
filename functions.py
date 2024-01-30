@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 from datetime import timedelta
 from datetime import datetime
 import re
+import time
+import requests
 def caculate_data(file_path):
     df = pd.read_excel(file_path)
     ma_period = 20  # 移动平均的周期
@@ -91,9 +93,9 @@ def write_next_data(pd,future_price):
     # 回写到Excel文件
     bitcoin_data.to_excel(file_path, index=False)
 
-def test_history(model,bitcoin_data,record):
+def test_history(model,bitcoin_data,start,lengthrecord):
     # 数据回测
-    for i in range(2,record):
+    for i in range(start,start+lengthrecord):
         #random_integer = random.randint(2, 1000)    
         random_integer=i
         # 提取最后一个时间点的特征数据
@@ -106,21 +108,76 @@ def test_history(model,bitcoin_data,record):
         # 回写到Excel文件
         bitcoin_data.to_excel(file_path, index=False)
 
+def get_data_api(bitcoin_data):
+
+    host = "https://api.gateio.ws"
+    prefix = "/api/v4"
+    headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
+
+    url = '/spot/candlesticks'
+    query_param = 'currency_pair=BTC_USDT&limit=1'
+    while True:
+        r = requests.request('GET', host + prefix + url + "?" + query_param, headers=headers)
+        print(r.json()) 
+        get_right_time(minutes_to_add)
+        # data_k_date= datetime.utcfromtimestamp(int(r.json()[0][0])).strftime('%Y-%m-%d %H:%M:%S')
+        data_k_date=datetime.now()
+        data_k_price=r.json()[0][2]
+        data_k_volume=r.json()[0][6]
+        new_data = {
+        'Date':[data_k_date],  # 示例时间
+        'Price': [data_k_price],  # 示例价格
+        'Volume': [data_k_volume], # 示例成交量
+        'MA':[None],
+        'RSI':[None],
+        'Upper_BB':[None],
+        'Lower_BB':[None],
+        'Future_Price':[None],
+        }
+        print(new_data)
+        bitcoin_data = pd.concat([bitcoin_data, pd.DataFrame(new_data)], ignore_index=True)
+        bitcoin_data.to_excel(file_path, index=False)
+
+def get_right_time(minutes_to_add):
+    # 获取当前时间
+    current_time = datetime.now()
+    # 计算下一个整点时刻
+    next_time = current_time + timedelta(minutes=minutes_to_add)
+    next_time = next_time.replace(second=0)
+
+    # 计算等待时间，直到下一个整点时刻
+    time_to_wait = (next_time - current_time).total_seconds()
+    print(f"等待到下一个整点时刻（{next_time.strftime('%d/%m/%Y, %H:%M:%S')}）")
+    time.sleep(time_to_wait)
 
 if __name__ == "__main__":
     # 加载数据
     file_path = 'bitcoin_data.xlsx'  # 更改为您的文件路径
-    caculate_data(file_path) # 计算均值等技术指标
+   # caculate_data(file_path) # 计算均值等技术指标
     bitcoin_data = pd.read_excel(file_path)
-    model=train_data(bitcoin_data) # 训练模型
-    furture_price=predict_next(model,bitcoin_data) # 预测下一个未来值
-    print(furture_price)
+    #model=train_data(bitcoin_data) # 训练模型
+    #furture_price=predict_next(model,bitcoin_data) # 预测下一个未来值
+    #print(furture_price)
+    minutes_to_add=1
 
-    如果是上涨，则在当前价格买入，
-    实现数据抓取，并写入数据库中
-    目的一是运行一段时间看下预测情况
-    目的二是模拟一个账户进行买卖看下收益情况
+    while True:
+        
+        get_data_api(bitcoin_data)
 
-   # test_history(model,bitcoin_data,100)# 回测数据
+    
+    
+    # 目的一是运行一段时间看下预测情况
+        
+    #     每隔1分钟抓取一次，写入数据库表
+
+    #     然后回测一条数据，得到该时间的预测值
+    #       test_history(model,bitcoin_data,2,1)
+        
+    #     运行7天，查看最终的预测情况
+
+    # 目的二是模拟一个账户进行买卖看下收益情况
+    #     如果是上涨，则在当前价格买入，
+
+   # test_history(model,bitcoin_data,1,100)# 回测数据,起始为1的话，代表全部回测
    
 
