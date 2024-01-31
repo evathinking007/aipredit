@@ -1,3 +1,4 @@
+import warnings
 import openpyxl
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -67,6 +68,7 @@ class AIPredict:
         # 创建并拟合线性回归模型
         model = LinearRegression()
 
+
         model.fit(X_train, y_train)
 
         # 预测测试集的价格
@@ -78,6 +80,7 @@ class AIPredict:
 
         print(f"均方误差 (MSE): {mse}")
         print(f"决定系数 (R^2): {r2}")
+        warnings.filterwarnings("ignore", category=UserWarning)
         return model
 
     def predict_next(self, model, bitcoin_data):
@@ -207,7 +210,7 @@ if __name__ == "__main__":
     Gateioget = GateIO_Api()
     Contract = Contract(initial_balance=10000000)
 
-    minutes_to_add = 5
+    minutes_to_add = 1
 
     while True:
         # 清理数据
@@ -235,7 +238,7 @@ if __name__ == "__main__":
         current_price = Gateioget.get_current_price()
         print(f"Current Price: ${current_price}")
         # 写入时间、价格、预测值到txt中
-        with open(output_file_path, 'w') as file:
+        with open(output_file_path, mode='a') as file:
             # 将时间、价格和预测值以制表符分隔的格式写入文件
             data_k_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             file.write(f"{data_k_date}\t{current_price}\t{furture_price}\n")
