@@ -18,8 +18,8 @@ class AIPredict:
         # bitcoin_data.drop(bitcoin_data.index, inplace=True)
         bitcoin_data = bitcoin_data.iloc[0:0]
         # 替换为您的实际表头
-        bitcoin_data.columns = ['Date', 'Price', 'Volume', 'MA', 'RSI', 'Upper_BB', 'Lower_BB']
-        bitcoin_data['Future_Price'] = None
+        bitcoin_data.columns = ['Date', 'Price', 'Volume', 'MA', 'RSI', 'Upper_BB', 'Lower_BB','Future_Price']
+        # bitcoin_data['Future_Price'] = None
         bitcoin_data.to_excel(file_path, index=False)
 
     def caculate_data(self, file_path):
@@ -48,7 +48,7 @@ class AIPredict:
 
         # 清楚前20条没有数据的行
         df = df.iloc[20:]
-        df['Date'] = df['Date'].str.replace('UTC+0', '')
+        # df['Date'] = df['Date'].str.replace('UTC+0', '')
         df['Future_Price'] = None
 
         # 回写到Excel文件
@@ -66,6 +66,7 @@ class AIPredict:
 
         # 创建并拟合线性回归模型
         model = LinearRegression()
+
         model.fit(X_train, y_train)
 
         # 预测测试集的价格
@@ -133,11 +134,11 @@ class GateIO_Api:
 
         r = requests.request('GET', host + prefix + url + "?" + query_param, headers=headers)
         data_rows_num = len(r.json())
-        print(data_rows_num)
+        print("===========get "+str(data_rows_num)+" k datas===========")
         worksheet.insert_rows(data_rows_num)
-        for i in range(1, data_rows_num + 1):
+        for i in range(2, data_rows_num):
             # data_k_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            data_k_date = datetime.fromtimestamp(r.json()[i][0])
+            data_k_date = datetime.fromtimestamp(int(r.json()[i][0]))
             data_k_price = r.json()[i][2]
             data_k_volume = r.json()[i][6]
             # item = {
@@ -211,15 +212,20 @@ if __name__ == "__main__":
     while True:
         # 清理数据
         AI_Trainer.clean_data(file_path)
+        print(f"===========clean data ok===========")
         # get得到数据
         Gateioget.get_current_data_api(file_path)
+        print(f"===========get new 1000 datas ok===========")
         # 按时间升序进行排序
         AI_Trainer.sort_date_value(file_path)
+        print(f"===========sort datas ok===========")
         # 计算指数（去掉空值）
         AI_Trainer.caculate_data(file_path)  # 计算均值等技术指标
+        print(f"===========calulate ma rsi upper ok===========")
         # 训练数据
         bitcoin_data = pd.read_excel(file_path)
         model = AI_Trainer.train_data(bitcoin_data)  # 训练模型
+        print(f"===========train data ok===========")
         # 预测数据
         furture_price = AI_Trainer.predict_next(model, bitcoin_data)
         print(f"Next Furture Price: ${furture_price}")
@@ -233,8 +239,10 @@ if __name__ == "__main__":
             # 将时间、价格和预测值以制表符分隔的格式写入文件
             data_k_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             file.write(f"{data_k_date}\t{current_price}\t{furture_price}\n")
+        print(f"===========record data ok===========")
         # 执行交易
         Contract.maximize_profit(float(furture_price), float(current_price), amount=0.2)
+        print(f"===========contract business ok===========")
 
 
 
