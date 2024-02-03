@@ -309,7 +309,7 @@ if __name__ == "__main__":
             logging.info(f"Next Furture Price: ${furture_price}")
             # 将预测的值写入表格
             AI_Trainer.write_furture_data(file_path,furture_price)
-            logging.info(f"将第{i}次预测的价格回写")
+            logging.info(f"将第{i}次预测的价格{furture_price}回写")
         furture_trade,percent_difference=AI_Trainer.get_furture_trade(file_path,predict_step)
         # 得到当前的价格
         current_price = Gateioget.get_current_price()
@@ -325,5 +325,5 @@ if __name__ == "__main__":
         logging.info(f"True Price after ${minutes_to_add}min: ${true_price}")
         with open(output_file_path, mode='a') as file:
             # 将5min之前的时间、价格和预测值、5min之后真实值以制表符分隔的格式写入文件
-            file.write(f"{data_k_date}\t{current_price}\t{furture_trade}\t{percent_difference}%\t{true_price}\t{100 * (true_price - current_price) / current_price}%\n")
+            file.write(f"{data_k_date}\t{current_price}\t{furture_trade}\t{percent_difference}%\t{true_price}\t{round(100 * (float(true_price)- float(current_price)) / float(current_price),2)}%\n")
         logging.info(f"===========record data ok===================================================")
