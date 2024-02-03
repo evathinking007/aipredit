@@ -1,0 +1,1315 @@
+INFO:root:===========initialize===========
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4572364499986856
+INFO:root:决定系数 (R^2): 0.9225574944656691
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.39
+INFO:root:Current Price: $302
+INFO:root:Bought 0.33 contracts at price 302.0 for $99.66000000000001
+INFO:root:Current balance: $0.3399999999999892
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 16:45:00）
+INFO:root:True Price after $5min: $302
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5493270840634563
+INFO:root:决定系数 (R^2): 0.9089281671775179
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.27
+INFO:root:Current Price: $302
+INFO:root:之前已买入，现在趋势是继续上涨，继续观望。
+INFO:root:Insufficient balance to buy the contract.
+INFO:root:Current balance: $0.3399999999999892
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 16:50:00）
+INFO:root:True Price after $5min: $301.8
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5217283142733153
+INFO:root:决定系数 (R^2): 0.9110519573879263
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.23
+INFO:root:Current Price: $301.6
+INFO:root:之前已买入，现在趋势是继续上涨，继续观望。
+INFO:root:Insufficient balance to buy the contract.
+INFO:root:Current balance: $0.3399999999999892
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 99.868
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 16:55:00）
+INFO:root:True Price after $5min: $301.6
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5150128253888273
+INFO:root:决定系数 (R^2): 0.9126649431015025
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.14
+INFO:root:Current Price: $301.5
+INFO:root:之前已买入，现在趋势是继续上涨，继续观望。
+INFO:root:Insufficient balance to buy the contract.
+INFO:root:Current balance: $0.3399999999999892
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 99.835
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:00:00）
+INFO:root:True Price after $5min: $301.5
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5337339209182154
+INFO:root:决定系数 (R^2): 0.9098016102743756
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.07
+INFO:root:Current Price: $301.6
+INFO:root:之前已买入，现在趋势是继续上涨，继续观望。
+INFO:root:Insufficient balance to buy the contract.
+INFO:root:Current balance: $0.3399999999999892
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 99.868
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:05:00）
+INFO:root:True Price after $5min: $301.8
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5515077031925257
+INFO:root:决定系数 (R^2): 0.9046607976242235
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.05
+INFO:root:Current Price: $301.8
+INFO:root:之前已买入，现在趋势是继续上涨，继续观望。
+INFO:root:Insufficient balance to buy the contract.
+INFO:root:Current balance: $0.3399999999999892
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 99.934
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:10:00）
+INFO:root:True Price after $5min: $301.8
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5710502583087523
+INFO:root:决定系数 (R^2): 0.9027509725884376
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.01
+INFO:root:Current Price: $301.8
+INFO:root:之前已买入，现在趋势是继续上涨，继续观望。
+INFO:root:Insufficient balance to buy the contract.
+INFO:root:Current balance: $0.3399999999999892
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 99.934
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:15:00）
+INFO:root:True Price after $5min: $301.9
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5107844535113761
+INFO:root:决定系数 (R^2): 0.9118540399723777
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.97
+INFO:root:Current Price: $301.9
+INFO:root:之前已买入，现在趋势是继续上涨，继续观望。
+INFO:root:Insufficient balance to buy the contract.
+INFO:root:Current balance: $0.3399999999999892
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 99.96699999999998
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:20:00）
+INFO:root:True Price after $5min: $302
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5039650614108575
+INFO:root:决定系数 (R^2): 0.9123777464756525
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.96
+INFO:root:Current Price: $302
+INFO:root:Sold 0.33 contracts at price 302.0 for $99.66000000000001
+INFO:root:Current balance: $100.0
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:25:00）
+INFO:root:True Price after $5min: $302.1
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5237205941095554
+INFO:root:决定系数 (R^2): 0.9111700246856189
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.95
+INFO:root:Current Price: $302.1
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.0
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:30:00）
+INFO:root:True Price after $5min: $302
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4765129232728423
+INFO:root:决定系数 (R^2): 0.9176397416565458
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.92
+INFO:root:Current Price: $302
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.0
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:35:00）
+INFO:root:True Price after $5min: $302.1
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.45764449319222844
+INFO:root:决定系数 (R^2): 0.918930740906478
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.93
+INFO:root:Current Price: $302.1
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.0
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:40:00）
+INFO:root:True Price after $5min: $302.1
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.43738713927191053
+INFO:root:决定系数 (R^2): 0.923161134670314
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.91
+INFO:root:Current Price: $301.9
+INFO:root:Bought 0.33 contracts at price 301.9 for $99.627
+INFO:root:Current balance: $0.37300000000000466
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:45:00）
+INFO:root:True Price after $5min: $302.1
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.44962380339548247
+INFO:root:决定系数 (R^2): 0.9213512141780205
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.92
+INFO:root:Current Price: $302.3
+INFO:root:Sold 0.33 contracts at price 302.3 for $99.75900000000001
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:50:00）
+INFO:root:True Price after $5min: $302.2
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.45196738522331137
+INFO:root:决定系数 (R^2): 0.9229315182109784
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.89
+INFO:root:Current Price: $302.2
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 17:55:00）
+INFO:root:True Price after $5min: $302.2
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.45434964515480974
+INFO:root:决定系数 (R^2): 0.9213496202965765
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.92
+INFO:root:Current Price: $302.3
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:00:00）
+INFO:root:True Price after $5min: $302.1
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.39728531873588435
+INFO:root:决定系数 (R^2): 0.9303973083788365
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.92
+INFO:root:Current Price: $302.1
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:05:00）
+INFO:root:True Price after $5min: $302
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.39890172951390285
+INFO:root:决定系数 (R^2): 0.929253216843386
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.94
+INFO:root:Current Price: $302
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:21:00）
+INFO:root:True Price after $5min: $302.2
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5034362068564547
+INFO:root:决定系数 (R^2): 0.9140374062408043
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.97
+INFO:root:Current Price: $302.2
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:26:00）
+INFO:root:True Price after $5min: $302.3
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5017281775889019
+INFO:root:决定系数 (R^2): 0.9135417171609257
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.99
+INFO:root:Current Price: $302.5
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:31:00）
+INFO:root:True Price after $5min: $302.4
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5275817644111277
+INFO:root:决定系数 (R^2): 0.9082083027024768
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.03
+INFO:root:Current Price: $302.3
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:36:00）
+INFO:root:True Price after $5min: $302.2
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.44294619188950884
+INFO:root:决定系数 (R^2): 0.9222754999595653
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.04
+INFO:root:Current Price: $302.2
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:41:00）
+INFO:root:True Price after $5min: $302.3
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4331230435078329
+INFO:root:决定系数 (R^2): 0.9233655433324129
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.06
+INFO:root:Current Price: $302.2
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:47:00）
+INFO:root:True Price after $5min: $302.3
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4068563849302314
+INFO:root:决定系数 (R^2): 0.9286965392847772
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.12
+INFO:root:Current Price: $302.3
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:52:00）
+INFO:root:True Price after $5min: $302.3
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.43997294971144774
+INFO:root:决定系数 (R^2): 0.9233354579018157
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.13
+INFO:root:Current Price: $302.2
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 18:57:00）
+INFO:root:True Price after $5min: $302.2
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4695705560565746
+INFO:root:决定系数 (R^2): 0.9204857224401566
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.12
+INFO:root:Current Price: $302.3
+INFO:root:现在还没买入，但是趋势是下跌，继续等候上涨信号再买入。
+INFO:root:Current balance: $100.13200000000002
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 19:03:00）
+INFO:root:True Price after $5min: $301.9
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4616107714737876
+INFO:root:决定系数 (R^2): 0.9207739228564882
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.13
+INFO:root:Current Price: $301.9
+INFO:root:Bought 0.33 contracts at price 301.9 for $99.627
+INFO:root:Current balance: $0.5050000000000239
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 19:08:00）
+INFO:root:True Price after $5min: $301.9
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5107745822844674
+INFO:root:决定系数 (R^2): 0.9126257241658671
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.13
+INFO:root:Current Price: $301.9
+INFO:root:之前已买入，现在趋势是继续上涨，继续观望。
+INFO:root:Insufficient balance to buy the contract.
+INFO:root:Current balance: $0.5050000000000239
+INFO:root:Current amount: 0.33
+INFO:root:Current asset: 100.13200000000002
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 19:13:00）
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========initialize===========
+INFO:root:===========initialize===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5107736056100924
+INFO:root:决定系数 (R^2): 0.912625891238034
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.13
+INFO:root:===========initialize===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4293949953364591
+INFO:root:决定系数 (R^2): 0.9135082336088044
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.11
+INFO:root:===========initialize===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5068525325124932
+INFO:root:决定系数 (R^2): 0.8832815146294501
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.12
+INFO:root:===========initialize===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6187749570280817
+INFO:root:决定系数 (R^2): 0.8386456269529375
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.13
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5975985717332111
+INFO:root:决定系数 (R^2): 0.84996561669616
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.79
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6002796081126696
+INFO:root:决定系数 (R^2): 0.8186440970048505
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.69
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4584134254017099
+INFO:root:决定系数 (R^2): 0.8666999047721309
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.72
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.571254624035611
+INFO:root:决定系数 (R^2): 0.8217780930571248
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.39
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5301790387499272
+INFO:root:决定系数 (R^2): 0.8167515186753165
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.38
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4042419535622997
+INFO:root:决定系数 (R^2): 0.8552991453522893
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.47
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.39877343051400627
+INFO:root:决定系数 (R^2): 0.8061426456047348
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.47
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4386164967976388
+INFO:root:决定系数 (R^2): 0.8415817250143939
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.44
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.3829162479122402
+INFO:root:决定系数 (R^2): 0.8533271234160544
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.62
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.49049293110244874
+INFO:root:决定系数 (R^2): 0.8335788712447372
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.45
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.40863872631247705
+INFO:root:决定系数 (R^2): 0.8538502723852106
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.46
+INFO:root:将第12次预测的价格回写
+INFO:root:===========initialize===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.31283495020394114
+INFO:root:决定系数 (R^2): 0.8906306428733585
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.48
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.26685581871871783
+INFO:root:决定系数 (R^2): 0.8815479308261296
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.41
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.29710899165569377
+INFO:root:决定系数 (R^2): 0.8549937251632849
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.5
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.3392885328668629
+INFO:root:决定系数 (R^2): 0.8101209761962495
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.41
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.33442511224528854
+INFO:root:决定系数 (R^2): 0.7657258041731325
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.35
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.31650159463903715
+INFO:root:决定系数 (R^2): 0.7621201500064277
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.37
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.30737577616153533
+INFO:root:决定系数 (R^2): 0.7786400723724156
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.29
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.28579754117947687
+INFO:root:决定系数 (R^2): 0.7924636671010583
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.3
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.33121062318024697
+INFO:root:决定系数 (R^2): 0.772577491391426
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.31
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.3084095201154108
+INFO:root:决定系数 (R^2): 0.7777340400371362
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.14
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.27007065400970354
+INFO:root:决定系数 (R^2): 0.7404695622285502
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.28
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.2832353525009306
+INFO:root:决定系数 (R^2): 0.7539510919262671
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.29
+INFO:root:将第12次预测的价格回写
+INFO:root:===========initialize===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.3122683540109215
+INFO:root:决定系数 (R^2): 0.6649190198218611
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.17
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.2806914533825012
+INFO:root:决定系数 (R^2): 0.5950422991283696
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.25
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.37554170601940695
+INFO:root:决定系数 (R^2): 0.6348323407487071
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.18
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.30536469600767485
+INFO:root:决定系数 (R^2): 0.6216756953798499
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.19
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.40253371514317415
+INFO:root:决定系数 (R^2): 0.602698550346797
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.14
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.2554038261116643
+INFO:root:决定系数 (R^2): 0.6921515003926757
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.27
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.2698479415692822
+INFO:root:决定系数 (R^2): 0.7323869496292704
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.11
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.23194833025817982
+INFO:root:决定系数 (R^2): 0.6622495163883784
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.04
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.23350397849377488
+INFO:root:决定系数 (R^2): 0.7088558116410616
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.03
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.19966439110182643
+INFO:root:决定系数 (R^2): 0.6934173286967249
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $300.99
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.12722553378532211
+INFO:root:决定系数 (R^2): 0.8016991567693638
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $300.96
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.16210883696247694
+INFO:root:决定系数 (R^2): 0.7222041946242999
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $300.93
+INFO:root:将第12次预测的价格回写
+INFO:root:===========initialize===========
+INFO:root:===========initialize===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.14558593964166677
+INFO:root:决定系数 (R^2): 0.8342034624283493
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.22
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.10955313187709335
+INFO:root:决定系数 (R^2): 0.8842172939787201
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.11
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.13390754424807108
+INFO:root:决定系数 (R^2): 0.8126757850955914
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.09
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.15368370590801989
+INFO:root:决定系数 (R^2): 0.5068315979566103
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.99
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.12584571081996768
+INFO:root:决定系数 (R^2): 0.605169414229112
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.02
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.07770636899835706
+INFO:root:决定系数 (R^2): 0.759116919990751
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.01
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.12585504333170175
+INFO:root:决定系数 (R^2): 0.6274021536806624
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.02
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.0974292774732418
+INFO:root:决定系数 (R^2): 0.7243881521317039
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.04
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.0333634301995878
+INFO:root:决定系数 (R^2): -0.3938598846753105
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.08
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.01348006158199609
+INFO:root:决定系数 (R^2): 0.03809273151265191
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.08
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.004316532471173714
+INFO:root:决定系数 (R^2): -5.906451953874803
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.08
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.468132032945858
+INFO:root:决定系数 (R^2): 0.9177104711680666
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.13
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.592227015795201
+INFO:root:决定系数 (R^2): 0.875343409063389
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.83
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5363913690899792
+INFO:root:决定系数 (R^2): 0.8817085749564211
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.63
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5927644174442547
+INFO:root:决定系数 (R^2): 0.8488341639939374
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.53
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.428324518985858
+INFO:root:决定系数 (R^2): 0.869698000792122
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.59
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.45588343311329
+INFO:root:决定系数 (R^2): 0.8652473058691827
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.48
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4226486869879056
+INFO:root:决定系数 (R^2): 0.8700457623206946
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.59
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.46621749177229277
+INFO:root:决定系数 (R^2): 0.854761024803497
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.61
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5264530300927991
+INFO:root:决定系数 (R^2): 0.821336210578587
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.42
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4821740024202267
+INFO:root:决定系数 (R^2): 0.8143715335094868
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.4
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.571251789531463
+INFO:root:决定系数 (R^2): 0.751659038684488
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.17
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4750236050662807
+INFO:root:决定系数 (R^2): 0.8137301198165691
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.34
+INFO:root:将第12次预测的价格回写
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.46304064471472334
+INFO:root:决定系数 (R^2): 0.9190083829834316
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.11
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6329310103379849
+INFO:root:决定系数 (R^2): 0.8685931439781782
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.86
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5169756356971643
+INFO:root:决定系数 (R^2): 0.8842332074794286
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.68
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5172473298981406
+INFO:root:决定系数 (R^2): 0.8670915822486073
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.61
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.45391763204500635
+INFO:root:决定系数 (R^2): 0.8570094089561509
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.52
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5011035810569987
+INFO:root:决定系数 (R^2): 0.8549484273462902
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.34
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4429288417646598
+INFO:root:决定系数 (R^2): 0.8648725224798675
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.61
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5147458671303716
+INFO:root:决定系数 (R^2): 0.8388353158187639
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.6
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5205745363434027
+INFO:root:决定系数 (R^2): 0.8189730564452343
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.55
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.39051511208186995
+INFO:root:决定系数 (R^2): 0.840215300031529
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.41
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5615265180438501
+INFO:root:决定系数 (R^2): 0.7551748660060913
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.35
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5317538813848148
+INFO:root:决定系数 (R^2): 0.7933969634746963
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.35
+INFO:root:将第12次预测的价格回写
+INFO:root:===========initialize===========
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========initialize===========
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4903802158367893
+INFO:root:决定系数 (R^2): 0.9160300476239553
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.1
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5935901226292929
+INFO:root:决定系数 (R^2): 0.8725094467896665
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.1
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5553317753511865
+INFO:root:决定系数 (R^2): 0.8722234646162224
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.1
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5190243566151465
+INFO:root:决定系数 (R^2): 0.8555880024093583
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.07
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5135587410623754
+INFO:root:决定系数 (R^2): 0.8426968524973503
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.06
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.45176733571505073
+INFO:root:决定系数 (R^2): 0.8712428003392108
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.04
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.34840686819334704
+INFO:root:决定系数 (R^2): 0.8865741814318238
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.11
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.48636603950310736
+INFO:root:决定系数 (R^2): 0.8437744882450009
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.07
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5509103112639538
+INFO:root:决定系数 (R^2): 0.8204941444505768
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.1
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4044850382110142
+INFO:root:决定系数 (R^2): 0.8515349227452218
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.02
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6879341331734864
+INFO:root:决定系数 (R^2): 0.7398557015106438
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.0
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.49631241840167956
+INFO:root:决定系数 (R^2): 0.8075824484812796
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.99
+INFO:root:将第12次预测的价格回写
+INFO:root:Current Price: $301.7
+INFO:root:波动较缓，低于1%，不交易。
+INFO:root:Current balance: $100
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 19:43:00）
+INFO:root:True Price after $5min: $301.6
+INFO:root:===========record data ok===================================================
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.47669547381881916
+INFO:root:决定系数 (R^2): 0.9175431038761125
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.08
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6219936965101663
+INFO:root:决定系数 (R^2): 0.8673829691970353
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.07
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5129765897606903
+INFO:root:决定系数 (R^2): 0.8815667090269881
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.05
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4854717475351274
+INFO:root:决定系数 (R^2): 0.8639660981086092
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.04
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4695163966291796
+INFO:root:决定系数 (R^2): 0.8557050012076135
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.01
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.443353420795368
+INFO:root:决定系数 (R^2): 0.871857530096933
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.0
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4682333164261119
+INFO:root:决定系数 (R^2): 0.848035382517473
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.07
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5152631836546184
+INFO:root:决定系数 (R^2): 0.8360028642407248
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.02
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5615740253866291
+INFO:root:决定系数 (R^2): 0.8154202990954919
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.03
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.40516270436529767
+INFO:root:决定系数 (R^2): 0.8378901078775277
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.96
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6432850111109109
+INFO:root:决定系数 (R^2): 0.7624595285671097
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.92
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5197996452101321
+INFO:root:决定系数 (R^2): 0.796055055035679
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.94
+INFO:root:将第12次预测的价格回写
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5290218875447037
+INFO:root:决定系数 (R^2): 0.9090552706419734
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $302.0
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.59554234624074
+INFO:root:决定系数 (R^2): 0.8600400405546013
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.97
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5185090834424295
+INFO:root:决定系数 (R^2): 0.8802470218710717
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.96
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4361835726699138
+INFO:root:决定系数 (R^2): 0.8729763763677127
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.92
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4631933146189033
+INFO:root:决定系数 (R^2): 0.8554874772800527
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.9
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4629594642345169
+INFO:root:决定系数 (R^2): 0.863857307409599
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.89
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.39117815595916
+INFO:root:决定系数 (R^2): 0.8715526320207259
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.91
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.47603037025884426
+INFO:root:决定系数 (R^2): 0.8447510501232691
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.88
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.505766638181417
+INFO:root:决定系数 (R^2): 0.8297895338047321
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.88
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.48343298050520406
+INFO:root:决定系数 (R^2): 0.8057774626660872
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.84
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6276492991886201
+INFO:root:决定系数 (R^2): 0.7714295859564142
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.78
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.46775504128573164
+INFO:root:决定系数 (R^2): 0.8130564503838076
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.8
+INFO:root:将第12次预测的价格回写
+INFO:root:Current Price: $301.5
+INFO:root:DOWN,但波动较缓，低于1%，不交易。
+INFO:root:Current balance: $100
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 20:03:00）
+INFO:root:===========initialize===========
+INFO:root:===========clean data ok===========
+INFO:root:===========get 1000 k datas===========
+INFO:root:===========get new 1000 datas ok===========
+INFO:root:===========sort datas ok===========
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5073033264099787
+INFO:root:决定系数 (R^2): 0.9110360589450942
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.96
+INFO:root:将第1次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6207334660039404
+INFO:root:决定系数 (R^2): 0.8537712316248013
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.94
+INFO:root:将第2次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5578030358218526
+INFO:root:决定系数 (R^2): 0.8762226713584613
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.92
+INFO:root:将第3次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4704921151844091
+INFO:root:决定系数 (R^2): 0.8682309420020926
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.89
+INFO:root:将第4次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.49165602303538625
+INFO:root:决定系数 (R^2): 0.8430998853611422
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.85
+INFO:root:将第5次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4457905242210168
+INFO:root:决定系数 (R^2): 0.8679477170700136
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.84
+INFO:root:将第6次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.41418327293539026
+INFO:root:决定系数 (R^2): 0.8600554148519091
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.86
+INFO:root:将第7次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5206821349028897
+INFO:root:决定系数 (R^2): 0.8390254688121418
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.84
+INFO:root:将第8次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.5179300639312464
+INFO:root:决定系数 (R^2): 0.8234786505898734
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.85
+INFO:root:将第9次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4957057354586242
+INFO:root:决定系数 (R^2): 0.7932272863360672
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.81
+INFO:root:将第10次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.6093114451752321
+INFO:root:决定系数 (R^2): 0.7758216900558784
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.75
+INFO:root:将第11次预测的价格回写
+INFO:root:===========calulate ma rsi upper ok===========
+INFO:root:均方误差 (MSE): 0.4439703183145257
+INFO:root:决定系数 (R^2): 0.8199895621720157
+INFO:root:===========train data ok===========
+INFO:root:Next Furture Price: $301.76
+INFO:root:将第12次预测的价格回写
+INFO:root:Current Price: $301.5
+INFO:root:DOWN,但波动较缓，低于1%，不交易。
+INFO:root:Current balance: $100
+INFO:root:Current amount: 0
+INFO:root:Current asset: 100.0
+INFO:root:===========contract business ok===========
+INFO:root:等待到下一个整点时刻（03/02/2024, 20:08:00）
