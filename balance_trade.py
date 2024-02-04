@@ -104,7 +104,7 @@ class GateIO_Api:
         logging.info(f"等待到下一个整点时刻（{next_time.strftime('%d/%m/%Y, %H:%M:%S')}）")
         time.sleep(time_to_wait)
 
-    def get_current_price(self, file_path):
+    def get_current_price(self, file_path, coin_name):
         workbook = openpyxl.load_workbook(file_path)
         # 选择第一个工作表
         worksheet = workbook.active
@@ -113,7 +113,7 @@ class GateIO_Api:
         headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
 
         url = '/spot/candlesticks'
-        query_param = 'currency_pair=ETH_USDT&limit=1'
+        query_param = 'currency_pair=' + coin_name + '_USDT&limit=1'
         r = requests.request('GET', host + prefix + url + "?" + query_param, headers=headers)
         data_k_date = datetime.fromtimestamp(int(r.json()[0][0]))
         data_k_volume = r.json()[0][6]
@@ -126,7 +126,7 @@ class GateIO_Api:
         workbook.save(file_path)
         return data_k_price
 
-    def get_current_data_api(self, file_path):
+    def get_current_data_api(self, file_path, coin_name):
         workbook = openpyxl.load_workbook(file_path)
         # 选择第一个工作表
         worksheet = workbook.active
@@ -136,7 +136,7 @@ class GateIO_Api:
         headers = {'Accept': 'application/json', 'Content-Type': 'application/json'}
 
         url = '/spot/candlesticks'
-        query_param = 'currency_pair=ETH_USDT&limit=1000&interval=5m'
+        query_param = 'currency_pair=' + coin_name + '_USDT&limit=1000&interval=5m'
 
         r = requests.request('GET', host + prefix + url + "?" + query_param, headers=headers)
         data_rows_num = len(r.json())
@@ -200,7 +200,7 @@ class Contract:
 
 if __name__ == "__main__":
     # 加载数据
-    coin_name = "eth"
+    coin_name = "ETH"
     now_time = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
     file_path = coin_name + "_" + now_time + ".xlsx"  # 更改为您的文件路径
     logging.basicConfig(filename=coin_name + '_execute.log', level=logging.INFO)
@@ -215,7 +215,7 @@ if __name__ == "__main__":
     AI_Trainer.create_excel(file_path)
     logging.info(f"===========clean data ok===========")
     # 读取5min数据
-    Gateioget.get_current_data_api(file_path)
+    Gateioget.get_current_data_api(file_path, coin_name)
     logging.info(f"===========get new 1000 datas ok===========")
     # 按时间升序进行排序
     AI_Trainer.sort_date_value(file_path)
@@ -223,7 +223,7 @@ if __name__ == "__main__":
 
     while True:
         # 获取当前值
-        current_price = Gateioget.get_current_price(file_path)
+        current_price = Gateioget.get_current_price(file_path, coin_name)
         logging.info(f"Current Price: ${current_price}")
 
         # 计算指数
