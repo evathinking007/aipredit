@@ -216,20 +216,16 @@ class Contract:
 
         self.get_balance(price)  # 查询当前余额
 
-def trade_run(coin_name):
+def trade_run(coin_name,initial_balance):
     now_time = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
     file_path = coin_name + "_" + now_time + ".xlsx"  # 更改为您的文件路径
     log_file_name = f"{coin_name}_{now_time}_execute.log"
     logger=setup_logger(coin_name, log_file_name)
 
-    
-
     AI_Trainer = AIPredict(logger)
     Gateioget = GateIO_Api(logger)
-    contract = Contract(logger,initial_balance=100)
+    contract = Contract(logger,initial_balance)
     minutes_to_add = 1
-
-
 
     logger.info(f"===========initialize==============================================")
     # 创建excel
@@ -266,10 +262,15 @@ def trade_run(coin_name):
 
 if __name__ == "__main__":
     # 加载数据
-    coin_names = ['ETH','BTC','BNB']
+    coins = [
+        {'name':'ETH','init':1000},
+        {'name':'BTC','init':10000},
+        {'name':'BNB','init':1000}
+        ]
+
     threads=[]
-    for coin_name in coin_names:
-        thread = threading.Thread(target=trade_run, args=(coin_name,))
+    for coin in coins:
+        thread = threading.Thread(target=trade_run, args=(coin['name'],coin['init']))
         threads.append(thread)
 
     # 启动所有线程
