@@ -118,7 +118,7 @@ class GateIO_Api:
         data_k_date = datetime.fromtimestamp(int(r.json()[0][0]))
         data_k_volume = r.json()[0][6]
         data_k_price = r.json()[0][2]
-        max_row = worksheet.max_row()
+        max_row = worksheet.max_row
         worksheet.cell(row=max_row, column=1, value=data_k_date)
         worksheet.cell(row=max_row, column=2, value=float(data_k_price))
         worksheet.cell(row=max_row, column=3, value=float(data_k_volume))
