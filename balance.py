@@ -52,7 +52,7 @@ class AIPredict:
         df['MA'] = df['Price'].rolling(window=ma_period).mean()
 
         # 计算相对强弱指标（RSI）
-        rsi_period = 14  # RSI的周期
+        rsi_period = 6  # RSI的周期
         price_diff = df['Price'].diff()
         gain = price_diff.where(price_diff > 0, 0)
         loss = -price_diff.where(price_diff < 0, 0)
@@ -225,7 +225,7 @@ def trade_run(coin_name,initial_balance):
     AI_Trainer = AIPredict(logger)
     Gateioget = GateIO_Api(logger)
     contract = Contract(logger,initial_balance)
-    minutes_to_add = 1
+    minutes_to_add = 5
 
     logger.info(f"===========initialize==============================================")
     # 创建excel
