@@ -142,7 +142,7 @@ class GateIO_Api:
         print(r.json()[0])
         return r.json()[0][3]
 
-    def save_buy_trade_into_excel(self,file_path,trade):
+    def save_contract_duo_buy_trade_into_excel(self,file_path,trade):
         workbook = openpyxl.load_workbook(file_path)
         # 选择第一个工作表
         worksheet = workbook.active
@@ -159,7 +159,7 @@ class GateIO_Api:
 
         workbook.save(file_path)
 
-    def save_sell_trade_into_excel(self,file_path,trade):
+    def save_contract_duo_sell_trade_into_excel(self,file_path,trade):
         workbook = openpyxl.load_workbook(file_path)
         # 选择第一个工作表
         worksheet = workbook.active
@@ -171,10 +171,25 @@ class GateIO_Api:
                 worksheet.cell(row=i, column=6, value=trade["sell_price"])
                 worksheet.cell(row=i, column=7, value=trade["sell_amount"])
                 worksheet.cell(row=i, column=8, value=trade["sell_percentage"])
-
         workbook.save(file_path)
 
-    def save_contract_buy_trade_into_excel(self,file_path,trade):
+    def save_contract_kong_sell_trade_into_excel(self,file_path,trade):
+        workbook = openpyxl.load_workbook(file_path)
+        # 选择第一个工作表
+        worksheet = workbook.active
+        max_row = worksheet.max_row
+        worksheet.cell(row=max_row+1, column=1, value=trade["buy_time"])
+        worksheet.cell(row=max_row+1, column=2, value=trade["buy_price"])
+        worksheet.cell(row=max_row+1, column=3, value=trade["buy_amount"])
+        worksheet.cell(row=max_row+1, column=4, value=trade["buy_percentage"])
+        worksheet.cell(row=max_row+1, column=5, value=trade["sell_time"])
+        worksheet.cell(row=max_row+1, column=6, value=trade["sell_price"])
+        worksheet.cell(row=max_row+1, column=7, value=trade["sell_amount"])
+        worksheet.cell(row=max_row+1, column=8, value=trade["sell_percentage"])
+        worksheet.cell(row=max_row+1, column=9, value=trade["direction"])
+        workbook.save(file_path)
+
+    def save_contract_kong_buy_trade_into_excel(self,file_path,trade):
         workbook = openpyxl.load_workbook(file_path)
         # 选择第一个工作表
         worksheet = workbook.active
@@ -185,7 +200,6 @@ class GateIO_Api:
                 worksheet.cell(row=i, column=2, value=trade["buy_price"])
                 worksheet.cell(row=i, column=3, value=trade["buy_amount"])
                 worksheet.cell(row=i, column=4, value=trade["buy_percentage"])
-
         workbook.save(file_path)
 
     def round_down(self,value, decimals):
@@ -283,7 +297,7 @@ class Contract:
         self.contract=coin_name+'_USDT'
         self.balance = self.get_balance()
 
-    def submit_order(self,order_size,price):
+    def submit_order(self,futures_api,order_size,price):
         order = FuturesOrder(contract=self.contract, size=order_size, price=price, tif='gtc')
         try:
             order_response = futures_api.create_futures_order(self.settle, order)
@@ -319,7 +333,7 @@ class Contract:
         
         # 设置杠杆  
         leverage = "50"
-        futures_api.update_position_leverage(self.settle, self.contract, leverage)           
+        futures_api.update_position_leverage(futures_api,self.settle, self.contract, leverage)           
         
         # 开始交易
         self.get_balance()  # 查询当前余额
@@ -343,6 +357,35 @@ class Contract:
         self.logger.info(f"Current balance: ${self.balance}")
         # self.logger.info(f"Current amount: {self.amount}")
         # self.logger.info(f"Current asset: {self.amount * price + self.balance}")
+
+class BackContract:
+    def __init__(self, logger,initial_balance=10000):
+        self.logger=logger
+        self.balance = initial_balance
+        self.amount = 0
+
+    def execute_trade(self, action, quantity, price):
+        cost = quantity * price
+        print(f"amount: {quantity} contracts at price {price} for ${cost}")
+        if action == "buy" and cost <= self.balance:
+            # 调用买入合约接口
+            self.balance -= cost
+            self.logger.info(f"Bought {quantity} contracts at price {price} for ${cost}")
+            self.amount+=quantity
+        elif action == "sell":
+            # 调用卖出合约接口
+            self.balance += cost
+            self.logger.info(f"Sold {quantity} contracts at price {price} for ${cost}")
+            self.amount-=quantity
+        else:
+            self.logger.info("参数错误")
+        self.get_balance(price)  # 查询当前余额
+
+    def get_balance(self, price=0):
+        # 调用查询余额和coin数量的接口
+        self.logger.info(f"Current balance: ${self.balance}")
+        self.logger.info(f"Current amount: {self.amount}")
+        self.logger.info(f"Current asset: {self.amount * price + self.balance}")
 
 class BackTest:
     def __init__(self, logger,coin_name,start_time,end_time,period='5m'):
@@ -469,7 +512,7 @@ def run_back_test(coin_name,start_time,end_time,period,initial_balance=1000,inve
     
     # 初始化交易类
     gateioget = GateIO_Api(logger)
-    contract = Contract(logger,coin_name,initial_balance)
+    contract = BackContract(logger,initial_balance)
     bt=BackTest(logger,coin_name,start_time,end_time,period)
 
     # 获取账户信息
@@ -480,11 +523,11 @@ def run_back_test(coin_name,start_time,end_time,period,initial_balance=1000,inve
     gateioget.create_excel(file_path)
     
     # 得到历史数据
-    history_file_path = bt.get_history_data()
-    # history_file_path ="ETH_1707667200_history_data.xlsx"
+    # history_file_path = bt.get_history_data()
+    history_file_path ="ETH_2024-02-17-17-54-58_history_data_5m.xlsx"
 
     # 计算历史数据的指标
-    bt.caculate_ma(history_file_path)
+    # bt.caculate_ma(history_file_path)
 
     # 回测开始运行
     logger.info("回测开始运行")
@@ -548,7 +591,7 @@ def run_back_test(coin_name,start_time,end_time,period,initial_balance=1000,inve
                         'sell_percentage': None,
                         'direction':'多',
                     }
-                    gateioget.save_buy_trade_into_excel(file_path,buy_trade)
+                    gateioget.save_contract_duo_buy_trade_into_excel(file_path,buy_trade)
 
         # 开始执行结对卖出做多的合约
         sell_trades,buy_trades=gateioget.wait_to_sell_or_buy(file_path)  
@@ -577,7 +620,7 @@ def run_back_test(coin_name,start_time,end_time,period,initial_balance=1000,inve
                         'sell_percentage': sell_percentage,
                         'direction':trade['direction'],
                     }
-                    gateioget.save_sell_trade_into_excel(file_path,sell_trade)  
+                    gateioget.save_contract_duo_sell_trade_into_excel(file_path,sell_trade)  
 
         # 开始运行网格卖出做空
         if len(buy_trades) < 5:
@@ -618,7 +661,7 @@ def run_back_test(coin_name,start_time,end_time,period,initial_balance=1000,inve
                         'direction':'空',
                     }
                     # 这里都用一个方法
-                    gateioget.save_buy_trade_into_excel(file_path,sell_trade)
+                    gateioget.save_contract_kong_sell_trade_into_excel(file_path,sell_trade)
 
         # 开始执行结对买入做空的合约
         sell_trades,buy_trades=gateioget.wait_to_sell_or_buy(file_path)  
@@ -648,7 +691,7 @@ def run_back_test(coin_name,start_time,end_time,period,initial_balance=1000,inve
                         'sell_percentage':trade['sell_percentage'],
                         'direction':trade['direction'],
                     }
-                    gateioget.save_contract_buy_trade_into_excel(file_path,buy_trade)  
+                    gateioget.save_contract_kong_buy_trade_into_excel(file_path,buy_trade)  
 
 
 
@@ -742,7 +785,7 @@ def trading_run(coin_name,period,initial_balance=1000,investment_per_trade=100,g
                         'sell_percentage': None,
                         'direction':'多',
                     }
-                    gateioget.save_buy_trade_into_excel(file_path,buy_trade)
+                    gateioget.save_contract_duo_buy_trade_into_excel(file_path,buy_trade)
 
         # 开始执行结对卖出做多的合约
         sell_trades,buy_trades=gateioget.wait_to_sell_or_buy(file_path)  
@@ -771,7 +814,7 @@ def trading_run(coin_name,period,initial_balance=1000,investment_per_trade=100,g
                         'sell_percentage': sell_percentage,
                         'direction':trade['direction'],
                     }
-                    gateioget.save_sell_trade_into_excel(file_path,sell_trade)  
+                    gateioget.save_contract_duo_sell_trade_into_excel(file_path,sell_trade)  
 
         # 开始运行网格卖出做空
         if len(buy_trades) < 5:
@@ -812,7 +855,7 @@ def trading_run(coin_name,period,initial_balance=1000,investment_per_trade=100,g
                         'direction':'空',
                     }
                     # 这里都用一个方法
-                    gateioget.save_buy_trade_into_excel(file_path,sell_trade)
+                    gateioget.save_contract_kong_sell_trade_into_excel(file_path,sell_trade)
 
         # 开始执行结对买入做空的合约
         sell_trades,buy_trades=gateioget.wait_to_sell_or_buy(file_path)  
@@ -842,19 +885,19 @@ def trading_run(coin_name,period,initial_balance=1000,investment_per_trade=100,g
                         'sell_percentage':trade['sell_percentage'],
                         'direction':trade['direction'],
                     }
-                    gateioget.save_contract_buy_trade_into_excel(file_path,buy_trade)  
+                    gateioget.save_contract_kong_buy_trade_into_excel(file_path,buy_trade)  
 
 
         # 间隔时间后再读取下一次数据
         gateioget.get_right_time(minutes_to_add)   
 
-# 这个是跑回测的
+# # 这个是跑回测的
 # if __name__ == "__main__":    # 加载数据
 #     coin = {'name':'ETH','init':1000,'invest_per_trade':100,'grid_start':0.5,'grid_step':0.2,'sell_step':1.025,'buy_step':0.994}
 #     run_back_test(
 #         coin['name'], 
-#         '2024-02-14 00:00:00', 
-#         '2024-02-17 00:00:00', 
+#         '2024-02-10 00:00:00', 
+#         '2024-02-17 20:30:00', 
 #         '5m',
 #         coin['init'],
 #         coin['invest_per_trade'],
@@ -867,14 +910,14 @@ def trading_run(coin_name,period,initial_balance=1000,investment_per_trade=100,g
 if __name__ == "__main__":
     # 加载数据
     coins = [
-        {'name':'ETH','init':1000,'k_period':'5m','invest_per_trade':100,'grid_start':0.5,'grid_step':0.2,'sell_step':1.03}
-        # {'name':'BTC','init':10000,'k_period':'5m','invest_per_trade':2000,'grid_start':0.5,'grid_step':0.2,'sell_step':1.03},
-        # {'name':'BNB','init':1000,'k_period':'5m','invest_per_trade':100,'grid_start':0.5,'grid_step':0.2,'sell_step':1.03}
+        {'name':'ETH','init':1000,'k_period':'5m','invest_per_trade':100,'grid_start':0.5,'grid_step':0.2,'sell_step':1.03,'buy_step':0.994}
+        # {'name':'BTC','init':10000,'k_period':'5m','invest_per_trade':2000,'grid_start':0.5,'grid_step':0.2,'sell_step':1.03,'buy_step':0.994},
+        # {'name':'BNB','init':1000,'k_period':'5m','invest_per_trade':100,'grid_start':0.5,'grid_step':0.2,'sell_step':1.03,'buy_step':0.994}
         ]
 
     threads=[]
     for coin in coins:
-        thread = threading.Thread(target=trading_run, args=(coin['name'],coin['k_period'],coin['init'],coin['invest_per_trade'],coin['grid_start'],coin['grid_step'],coin['sell_step']))
+        thread = threading.Thread(target=trading_run, args=(coin['name'],coin['k_period'],coin['init'],coin['invest_per_trade'],coin['grid_start'],coin['grid_step'],coin['sell_step'],coin['buy_step']))
         threads.append(thread)
 
     # 启动所有线程
