@@ -12,6 +12,7 @@ from gate_api import ApiClient, Configuration, FuturesApi, FuturesOrder, Transfe
 from gate_api.exceptions import GateApiException
 from decimal import Decimal as D, ROUND_UP, getcontext
 
+
 def setup_logger(name, log_file, level=logging.INFO):
     # """Function to setup as many loggers as you want"""
     handler = logging.FileHandler(log_file)
@@ -283,6 +284,7 @@ class GateIO_Api:
             workbook.save(file_path)
         return file_path
 
+
 class Contract:
     def __init__(self, logger, coin_name, initial_balance=10000):
         self.logger = logger
@@ -319,28 +321,11 @@ class Contract:
                 self.logger.info("order %s filled size %s with price %s", t.order_id, t.size, t.price)
             assert trade_size == order_size
 
-    def get_order_size(self,futures_api,quantity):
-        # # retrieve position size
-        # position_size = 0
-        # try:
-        #     position = futures_api.get_position(self.settle, self.contract)
-        #     position_size = position.size
-        # except GateApiException as ex:
-        #     if ex.label != "POSITION_NOT_FOUND":
-        #         raise ex
-
-        # # set order size
+    def get_order_size(self, futures_api, quantity, leverage):
         futures_contract = futures_api.get_futures_contract(self.settle, self.contract)
-        # order_size = 10
-        # if futures_contract.order_size_min and futures_contract.order_size_min > order_size:
-        #     order_size = futures_contract.order_size_min
-        # if position_size < 0:
-        #     order_size = 0 - order_size
-
         assert futures_contract.quanto_multiplier
-        order_size=D(quantity)/ D(futures_contract.quanto_multiplier)
+        order_size = D(quantity) * D(leverage) / D(futures_contract.quanto_multiplier)
         return int(order_size)
-
 
     def execute_trade(self, action, quantity, price):
         cost = quantity * price
@@ -349,21 +334,21 @@ class Contract:
         config = Configuration(key=self.api_key, secret=self.api_secret, host=self.host_used)
         futures_api = FuturesApi(ApiClient(config))
 
-        # 设置杠杆  
+        # 设置杠杆
         leverage = "50"
         futures_api.update_position_leverage(self.settle, self.contract, leverage)
 
         # 开始交易
         self.balance = self.get_balance()  # 查询当前余额
-        
+
         if action == "buy" and cost <= self.balance:
             # 调用买入合约接口
-            order_size=self.get_order_size(futures_api,quantity)
+            order_size = self.get_order_size(futures_api, quantity, leverage)
             self.submit_order(futures_api, order_size, price)
             self.logger.info(f"Bought {quantity} contracts at price {price} for ${cost}")
 
         elif action == "sell":
-            order_size=self.get_order_size(futures_api,quantity)
+            order_size = self.get_order_size(futures_api, quantity)
             self.submit_order(futures_api, -order_size, price)
             self.logger.info(f"Sold {quantity} contracts at price {price} for ${cost}")
         else:
@@ -379,6 +364,7 @@ class Contract:
         self.balance = float(futures_account.total)
         self.logger.info(f"Current balance: ${self.balance}")
         return self.balance
+
 
 def trading_run(coin_name, period, initial_balance=1000, investment_per_trade=100, grid_start=1, grid_step=0.5,
                 sell_step=1.025, buy_step=0.975):
